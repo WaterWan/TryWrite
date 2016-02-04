@@ -14,16 +14,13 @@ import android.widget.ImageView;
  */
 public class Preview extends Activity {
 
-    private ImageView mImageView01;
-    private ImageView mImageView02;
-    private ImageView mImageView03;
 
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.preview);
 
-        Button b3 = (Button) findViewById(R.id.button3);
-        b3.setOnClickListener(new Button.OnClickListener() {
+        Button btAdBack = (Button) findViewById(R.id.btAdBack);
+        btAdBack.setOnClickListener(new Button.OnClickListener() {
             public void onClick(View v) {
                 Intent intent = new Intent();
                 intent.setClass(Preview.this, Img.class);
@@ -32,13 +29,6 @@ public class Preview extends Activity {
                 Preview.this.finish();
             }
         });
-
-
-
-
-
-
-
 
     }
 

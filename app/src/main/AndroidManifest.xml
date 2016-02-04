@@ -20,6 +20,7 @@
         </activity>
         <activity android:name=".Img"></activity>
         <activity android:name=".Preview"></activity>
+        android:theme="@style/Theme.NoTitle_FullScree"
     </application>
 
 </manifest>
